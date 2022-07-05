@@ -36,3 +36,20 @@ You should put in the request body the following:
 - password
 
 ![Alt text](./screenshots/register.png?raw=true "Register")
+
+#### Login
+
+You should put in the request body the following:
+
+- email
+- password
+
+![Alt text](./screenshots/login.png?raw=true "Login")
+
+#### Welcome
+
+You should put in the request header the following:
+
+- x-access-token == to a registered user token
+
+![Alt text](./screenshots/welcome.png?raw=true "Welcome")
