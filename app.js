@@ -96,7 +96,14 @@ app.post("/login", async (req, res) => {
 app.post("/welcome", auth, async (req, res) => {
 	const { email } = req.user
 	const user = await User.findOne({ email })
-	res.status(200).send("Welcome 🙌 " + user.first_name + " " + user.last_name)
+	res
+		.status(200)
+		.send(
+			"Welcome 🙌 " +
+				user.first_name.toUpperCase() +
+				" " +
+				user.last_name.toUpperCase()
+		)
 })
 
 module.exports = app
